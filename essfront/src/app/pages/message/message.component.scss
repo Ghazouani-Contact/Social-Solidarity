@@ -1,0 +1,142 @@
+.messenger {
+    height: calc(100vh - 120px);
+    display: flex;
+    
+    .conversationMessage {
+      margin-bottom: 10px;
+      display: flex;
+    }
+    
+    .senderAvatar {
+      width: 30px; /* Adjust size as needed */
+      height: 30px; /* Adjust size as needed */
+      border-radius: 50%;
+    }
+    .senderLeft {
+      margin-right: 10px;
+    } 
+    .senderRight {
+      margin-left: 10px;
+    }
+    .message {
+      padding: 8px 12px;
+      border-radius: 12px;
+      word-wrap: break-word; /* Ensure long messages wrap */
+      max-width: 70%; /* Adjust maximum width as needed */
+      
+    }
+    
+    .messageLeft {
+      background-color: #e5e5ea; /* Adjust background color as needed */
+      align-self: flex-end; /* Align left messages to the end */
+
+    }
+    
+    .messageRight {
+      background-color: #d4edda; /* Adjust background color as needed */
+    }
+    
+    .userMessage {
+      text-align: right;
+      justify-content: flex-end;
+
+    }
+    
+    .otherMessage {
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .chatMenu {
+      flex: 3.5;
+  
+      .chatMenuWrapper {
+        padding: 10px;
+        height: 100%;
+  
+        .chatMenuInput {
+          width: 90%;
+          padding: 10px 0;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+      }
+  
+      @media screen and (max-width: 768px) {
+        flex: 1;
+  
+        .chatMenuInput {
+          display: none;
+        }
+      }
+    }
+  
+    .chatBox {
+      flex: 5.5;
+  
+      .chatBoxWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px;
+        height: 100%;
+  
+        .chatBoxTop {
+          height: 100%;
+          overflow-y: scroll;
+          padding-right: 10px;
+        }
+  
+        .chatBoxBottom {
+          margin-top: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+  
+          .chatMessageInput {
+            width: 80%;
+            height: 90px;
+            padding: 10px;
+          }
+  
+          .chatSubmitButton {
+            width: 70px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: teal;
+            color: white;
+          }
+        }
+  
+        .noConversationText {
+          position: absolute;
+          top: 10%;
+          font-size: 50px;
+          color: rgb(224, 220, 220);
+          cursor: default;
+        }
+      }
+  
+      @media screen and (max-width: 768px) {
+        flex: 10;
+      }
+    }
+  
+    .chatOnline {
+      flex: 3;
+  
+      .chatOnlineWrapper {
+        padding: 10px;
+        height: 100%;
+      }
+  
+      @media screen and (max-width: 768px) {
+        .chatOnline {
+          flex: 1px;
+        }
+      }
+    }
+  }
+  

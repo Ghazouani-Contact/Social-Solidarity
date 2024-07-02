@@ -1,0 +1,133 @@
+{
+    "posts":[
+      { 
+      "id":1, 
+      "userId":1,
+      "comments":[1, 2],
+      "subtitle":"subtitle 1",
+      "title":"title 1",
+      "description":"description 1" ,
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/0_ihTZPO4iffJ8n69_.jfif?alt=media&token=e75a7334-1da1-4832-8f5a-b17df93ccefa" 
+      },
+
+      { "id":2,
+      "userId":3,
+      "comments":[3],
+       "subtitle":"subtitle 2",
+        "title":"title 2",
+         "description":"description 2" ,
+         "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/pexels.jpg?alt=media&token=989266cd-ec89-4d41-855d-30f5b7da6927"
+          },
+
+      { "id":3,
+      "userId":2,
+      "comments":[4,5],
+       "subtitle":"subtitle 3",
+        "title": "title 3" ,
+         "description":"description 3",
+         "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/0_ihTZPO4iffJ8n69_.jfif?alt=media&token=e75a7334-1da1-4832-8f5a-b17df93ccefa"
+          },
+          { "id":4,
+      "userId":3,
+      "comments":[4,5],
+       "subtitle":"subtitle 4",
+        "title": "title 4" ,
+         "description":"description 4",
+         "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/0_ihTZPO4iffJ8n69_.jfif?alt=media&token=e75a7334-1da1-4832-8f5a-b17df93ccefa"
+          },
+          { 
+      "id":5, 
+      "userId":1,
+      "comments":[1, 2],
+      "subtitle":"subtitle 1",
+      "title":"title 1",
+      "description":"description 1" ,
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/0_ihTZPO4iffJ8n69_.jfif?alt=media&token=e75a7334-1da1-4832-8f5a-b17df93ccefa" 
+      },
+      { 
+      "id":6, 
+      "userId":1,
+      "comments":[1, 2],
+      "subtitle":"subtitle 1",
+      "title":"title 1",
+      "description":"description 1" ,
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/0_ihTZPO4iffJ8n69_.jfif?alt=media&token=e75a7334-1da1-4832-8f5a-b17df93ccefa" 
+      },
+      { 
+      "id":7, 
+      "userId":1,
+      "comments":[1, 2],
+      "subtitle":"subtitle 1",
+      "title":"title 1",
+      "description":"description 1" ,
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/0_ihTZPO4iffJ8n69_.jfif?alt=media&token=e75a7334-1da1-4832-8f5a-b17df93ccefa" 
+      },
+      { 
+      "id":8, 
+      "userId":1,
+      "comments":[1, 2],
+      "subtitle":"subtitle 1",
+      "title":"title 1",
+      "description":"description 1" ,
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/0_ihTZPO4iffJ8n69_.jfif?alt=media&token=e75a7334-1da1-4832-8f5a-b17df93ccefa" 
+      },
+      { 
+      "id":9, 
+      "userId":1,
+      "comments":[1, 2],
+      "subtitle":"subtitle 1",
+      "title":"title 1",
+      "description":"description 1" ,
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/0_ihTZPO4iffJ8n69_.jfif?alt=media&token=e75a7334-1da1-4832-8f5a-b17df93ccefa" 
+      },
+      { 
+      "id":10, 
+      "userId":1,
+      "comments":[1, 2],
+      "subtitle":"subtitle 1",
+      "title":"title 1",
+      "description":"description 1" ,
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/0_ihTZPO4iffJ8n69_.jfif?alt=media&token=e75a7334-1da1-4832-8f5a-b17df93ccefa" 
+      }
+    ],
+
+    "users": [
+      {
+        "id":1,
+        "name":"badis",
+        "posts":[1, 2] 
+      },
+      {
+        "id":2,
+        "name":"ahmed",
+        "posts":[3]
+      },
+      {
+        "id":3,
+        "name":"haroun",
+        "posts":[4,5]
+      }
+    ],
+
+    "comments": [
+      {
+        "id":1,
+        "postId":1,
+        "userId":3,
+        "content":"haroun comment"
+      },
+      {
+        "id":2,
+        "postId":1,
+        "userId":1,
+        "content":"badis comment"
+      },
+      {
+        "id":3,
+        "postId":2,
+        "userId":2,
+        "content":"ahmed comment"
+      }
+    ]
+  }
+  

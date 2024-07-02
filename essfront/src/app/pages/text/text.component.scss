@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between image and text */
+    padding: 10px; /* Add some padding around the container */
+  }
+  
+  .image-container {
+    flex: 1; /* Allow the image container to take up one part of the available space */
+    max-width: 50%; /* Max width for the image container */
+   
+  }
+  
+  .text-container {
+   
+    flex: 1; /* Allow the text container to take up the other part of the available space */
+    max-width: 50%; /* Max width for the text container */
+    padding-left: 20px; /* Add some space between image and text */
+  }
+  .textp1 {
+    margin-left: 10px;
+    color: black; // Default text color
+
+    &:hover {
+        color: rgb(223, 163, 163); // Text color on hover
+        cursor: pointer; // Optional: Change cursor style on hover
+    }
+}
+
+.textp2 {
+    margin-left: 10px;
+    color: black; // Default text color
+
+    &:hover {
+        color: rgb(160, 168, 124); // Text color on hover
+        cursor: pointer; // Optional: Change cursor style on hover
+    }
+}
+
+.textp3 {
+    margin-left: 10px;
+    color: black; // Default text color
+
+    &:hover {
+        color: rgb(164, 160, 214); // Text color on hover
+        cursor: pointer; // Optional: Change cursor style on hover
+    }
+}
+
+  

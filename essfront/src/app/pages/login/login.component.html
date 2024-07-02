@@ -1,0 +1,22 @@
+<div>
+    <div class="login-box">
+<h2>Login</h2>
+<form (ngSubmit)="login()">
+<div class="user-box">
+  <input [(ngModel)]="loginData.email" name="email"  required>
+  <label>Email</label>
+</div>
+<div class="user-box">
+  <input [(ngModel)]="loginData.password" name="password" type="password"  required>
+  <label>Password</label>
+</div>
+<button type="submit" class="styled-button">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  Submit
+</button>
+</form>
+</div>
+</div>

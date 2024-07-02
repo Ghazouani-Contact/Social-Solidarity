@@ -1,0 +1,14 @@
+
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p  class="textp1">
+      We envision a world where everyone has the opportunity to contribute to the social good. By fostering connections and providing resources, we aim to empower individuals and organizations to work together towards a more inclusive and sustainable future.
+      
+    </p>
+</section>
+  <div class="gallery" id="gallery" style="margin-top: 50px; margin-right: 100px; margin-left: 100px;" >
+    <div class="gallery-item" *ngFor="let image of images">
+        <div class="content"><img [src]="image" alt=""></div>
+    </div>
+  </div>
+  <app-footer></app-footer>

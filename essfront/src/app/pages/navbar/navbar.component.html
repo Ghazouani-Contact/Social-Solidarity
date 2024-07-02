@@ -1,0 +1,50 @@
+<header id="navbar" [class.fixed]="isFixed" class="navbar text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-bcf6e.appspot.com/o/Together%20(3).png?alt=media&token=3a644595-75b9-4ca5-b20c-42f62aca3ab8" alt="Logo" class="w-40 h-20">
+      </a>
+      
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a routerLink="/"routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" 
+        class="mr-5 hover:text-gray-900">Home</a>
+        <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" 
+        class="mr-5 hover:text-gray-900">About</a>
+        <a routerLink="/contact"routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page"
+         class="mr-5 hover:text-gray-900">Contact</a>
+        <a routerLink="/writePost" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page"
+         class="mr-5 hover:text-gray-900">Write Post</a>
+ 
+         <div class="dropdown"> 
+          <button class="dropbtn">Categories</button>
+          <div class="dropdown-content">
+            <a routerLink="/posts/categories/pdf" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="hover:text-gray-900">Books & Pdf File</a>
+            <a routerLink="/posts/categories/electronic" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="hover:text-gray-900">Electronic</a>
+            <a routerLink="/posts/categories/volenteer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="hover:text-gray-900">Volenteer Work</a>
+             <a routerLink="/posts/categories/educational_courses" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="hover:text-gray-900">Educational courses</a>
+             <a routerLink="/posts/categories/rental_houses" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="hover:text-gray-900">Rental of Houses</a>
+             <a routerLink="/posts/categories/other" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="hover:text-gray-900">Other</a>
+            
+             
+
+          </div>
+          
+        </div>
+
+
+      </nav>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <ng-container *ngIf="!isLoggedIn()">
+
+        <a routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="mr-5 hover:text-gray-900">Login</a>
+        <a routerLink="/register" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="mr-5 hover:text-gray-900">Register</a>
+      </ng-container>
+
+        <a routerLink="/viewdonation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="mr-5 hover:text-gray-900">View Donation</a>
+        <a routerLink="/message" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" areaCurrentWhenActive="page" class="mr-5 hover:text-gray-900">View Message</a>
+        <ng-container *ngIf="isLoggedIn()">
+        <button (click)="logout()">Logout</button>
+      </ng-container>
+
+    </nav>
+    </div>
+  </header>

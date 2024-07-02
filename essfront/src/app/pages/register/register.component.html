@@ -1,0 +1,48 @@
+<div class="login-box">
+  <h2>Register</h2>
+  <form #registerForm="ngForm" (ngSubmit)="signup()" novalidate>
+
+    <div class="user-box">
+      <input [(ngModel)]="signupData.name" name="name" placeholder="Name" required />
+      <label>Name</label>
+    </div>
+
+    <div class="user-box">
+      <input [(ngModel)]="signupData.contactNumber" name="contactNumber" placeholder="contactNumber" required />
+      <label>contactNumber</label>
+    </div>
+
+    <!--<div class="user-box">
+  <input  [(ngModel)]="signupData.status" name="status" placeholder="status" required />
+  <label>status</label>
+</div>-->
+    <!--<div class="user-box">
+  <input  [(ngModel)]="signupData.role" name="role" placeholder="role" required />
+  <label>role</label>
+</div>-->
+
+    <div class="user-box">
+      <input [(ngModel)]="signupData.email" name="email" placeholder="Email" required>
+      <label>Email</label>
+    </div>
+    <div class="user-box">
+      <input [(ngModel)]="signupData.password" name="password" type="password" placeholder="Password" required>
+      <label>Password</label>
+    </div>
+    <!-- <div class="ok">
+    <select name="select" required="">
+        <option value="">Choisir une option</option>
+        <option value="asocciation">Asocciation | Organisation</option>
+        <option value="utilisateur">donneur | Receveur</option>
+    </select>
+</div> -->
+    <button type="submit" class="styled-button" [disabled]="!registerForm.form.valid">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </button>
+
+  </form>
+</div>
