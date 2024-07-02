@@ -1,0 +1,7 @@
+# Ignore node_modules
+essfront/node_modules/
+
+# Ignore Angular build output
+essfront/dist/
+essfront/out-tsc/
+
